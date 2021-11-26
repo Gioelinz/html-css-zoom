@@ -9,6 +9,7 @@
 body{
     font-family: 'Lato', sans-serif;
     background-color: #000;
+    overflow-y: hidden;
 }
 
 .fullpage-container{
@@ -83,3 +84,59 @@ main{
 
 /* Interactions */
 
+.interactions{
+    background-color: #222222;
+    max-height: 20vh;
+    margin-top: 20px;
+    
+}
+
+.interactions nav{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5em;
+    flex-basis: 100px;
+}
+
+.interactions i{
+    font-size: 2em;
+}
+
+.left-nav, .middle-nav, .right-nav{
+    display: flex;
+    padding: 20px;
+}
+
+.left-nav a, .middle-nav a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 10px;
+    transition: 0.2s linear;
+}
+
+.middle-nav .fa-share-square{
+    color: #3AC800;
+}
+
+.left-nav a:hover, .middle-nav a:hover{
+    color: #3AC800;
+}
+
+.fa-chevron-up.small-content{
+    font-size: 1em;
+    line-height: 80px;
+}
+
+.right-nav{
+    align-items: center;
+    background-color: #666;
+}
+
+.right-nav a{
+    transition: 0.2s linear;
+}
+
+.right-nav a:hover{
+    color: red;
+}
